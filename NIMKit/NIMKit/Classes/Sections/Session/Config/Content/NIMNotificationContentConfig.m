@@ -22,6 +22,7 @@
     
     switch (object.notificationType) {
         case NIMNotificationTypeTeam:
+        case NIMNotificationTypeSuperTeam:
         case NIMNotificationTypeChatroom:
         {
             CGFloat TeamNotificationMessageWidth  = cellWidth;
@@ -67,6 +68,7 @@
     
     switch (object.notificationType) {
         case NIMNotificationTypeTeam:
+        case NIMNotificationTypeSuperTeam:
         case NIMNotificationTypeChatroom:
             return @"NIMSessionNotificationContentView";
         case NIMNotificationTypeNetCall:
